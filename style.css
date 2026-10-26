@@ -145,3 +145,25 @@ footer {
   .hero { padding: 64px 0 48px; }
   section { padding: 48px 0; }
 }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.shots figure {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.shots figcaption {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
